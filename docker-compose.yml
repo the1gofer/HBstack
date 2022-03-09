@@ -1,6 +1,7 @@
 version: '2'
 services:
   homebridge:
+    container_name: homebridge
     image: oznu/homebridge:ubuntu
     restart: always
     network_mode: host
@@ -9,6 +10,5 @@ services:
       - PUID=1000
       - HOMEBRIDGE_CONFIG_UI=1
       - HOMEBRIDGE_CONFIG_UI_PORT=8581
-      - TZ=Australia/Canberra
     volumes:
       - ./volumes/homebridge:/homebridge
