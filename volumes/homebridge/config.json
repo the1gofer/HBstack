@@ -1,0 +1,16 @@
+{
+    "bridge": {
+        "name": "Homebridge C5D8",
+        "username": "0E:AA:D2:B6:C5:D8",
+        "port": 53989,
+        "pin": "031-45-154"
+    },
+    "accessories": [],
+    "platforms": [
+        {
+            "name": "Config",
+            "port": 8581,
+            "platform": "config"
+        }
+    ]
+}
